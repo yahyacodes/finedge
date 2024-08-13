@@ -17,7 +17,7 @@ const avatarData = [
   },
 ];
 export default () => (
-  <div className="flex -space-x-2 mt-6 overflow-hidden">
+  <div className="flex -space-x-2 mt-10 overflow-hidden">
     {avatarData.map((item, idx) => {
       return (
         <Avatar.Root

@@ -60,6 +60,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        cardCustom: {
+          DEFAULT: "#F9F9F9"
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -79,6 +82,9 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      imageShadow: {
+        "custom-shadow": "1px 11px 30px -13px rgba(30, 30, 30, 1)",
       },
     },
   },

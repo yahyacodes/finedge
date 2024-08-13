@@ -1,19 +1,23 @@
 import Benefits from "@/components/benefits";
+import DownloadApp from "@/components/download-app";
+import Faqs from "@/components/faqs";
 import Features from "@/components/features";
+import PageFooter from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
-    <main>
-      <div className="flex flex-col items-center">
-        <Header />
-      </div>
-      <div className="flex min-h-screen flex-col items-center justify-between">
-        <Hero />
-        <Features />
-        <Benefits />
-      </div>
+    <main className="flex flex-col items-center">
+      <Header />
+      <Hero />
+      <Features />
+      <Benefits />
+      <Testimonials />
+      <Faqs />
+      <DownloadApp />
+      <PageFooter />
     </main>
   );
 }

@@ -5,7 +5,7 @@ import { LockKeyhole, Wallet, Zap } from "lucide-react";
 
 const Features = () => {
   return (
-    <main className="container px-4 py-16 sm:py-24 lg:py-32 justify-between max-w-5xl">
+    <main className="container px-4 py-16 sm:py-24 lg:py-32 justify-between max-w-7xl">
       <div className="mx-auto text-center">
         <h1 className="lg:text-3xl md:text-2xl text-xl font-bold">
           Banking Made Easy
@@ -16,8 +16,8 @@ const Features = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 mt-10">
-        <div className="bg-white border rounded-3xl p-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 mt-10">
+        <div className="bg-cardCustom rounded-3xl p-4">
           <div className="flex gap-2">
             <Zap
               className="bg-secondary text-primary rounded-full p-2"
@@ -31,7 +31,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="bg-white border rounded-3xl p-4">
+        <div className="bg-cardCustom rounded-3xl p-4">
           <div className="flex gap-2">
             <LockKeyhole
               className="bg-secondary text-primary rounded-full p-2"
@@ -45,7 +45,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="bg-white border rounded-3xl p-4">
+        <div className="bg-cardCustom rounded-3xl p-4">
           <div className="flex gap-2">
             <Wallet
               className="bg-secondary text-primary rounded-full p-2"

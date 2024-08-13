@@ -5,13 +5,13 @@ import Avatars from "./avatars";
 
 const Hero = () => {
   return (
-    <main className="container px-4 py-16 sm:py-24 lg:py-32 justify-between max-w-5xl">
-      <div className="grid grid-cols-2 gap-4">
-        <div className="mt-5">
-          <h1 className="lg:text-5xl md:text-5xl text-3xl font-bold">
+    <main className="container px-4 py-16 sm:py-24 lg:py-32 justify-between max-w-7xl">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+        <div className="mt-0 md:mt-14">
+          <h1 className="lg:text-6xl text-primary md:text-5xl text-3xl font-bold mb-4">
             Your Digital Banking Revolution
           </h1>
-          <p className="text-customColor max-w-md mt-2">
+          <p className="text-customColor max-w-md mt-2 mb-4">
             Experience seamless, secure, and smart banking at your fingertips.
           </p>
           <div className="flex gap-4 mt-4">
@@ -20,11 +20,11 @@ const Hero = () => {
           </div>
           <Avatars />
         </div>
-        <div className="w-full shadow-md rounded-3xl shadow-primary/20">
+        <div className="w-full shadow-xl rounded-3xl shadow-primary/40 border">
           <Image
             src="/assests/income-finedge.png"
-            alt="Automation Nexusai"
-            className="rounded-3xl"
+            alt="Your Digital Banking"
+            quality={100}
             width={1024}
             height={768}
           />
