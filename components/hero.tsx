@@ -15,7 +15,7 @@ const Hero = () => {
             Experience seamless, secure, and smart banking at your fingertips.
           </p>
           <div className="flex gap-4 mt-4">
-            <Button className="bg-secondary text-primary">Get Started</Button>
+            <Button className="bg-secondary text-primary hover:bg-secondary/80">Get Started</Button>
             <Button variant="outline">Learn More</Button>
           </div>
           <Avatars />

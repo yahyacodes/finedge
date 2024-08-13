@@ -110,7 +110,7 @@ const PageFooter = () => {
                 placeholder="Enter your email"
                 className="w-full p-2 outline-none rounded-full"
               />
-              <Button className="p-2.5 bg-secondary text-primary hover:bg-secondary/80">
+              <Button className="bg-secondary text-primary hover:bg-secondary/80">
                 Subscribe
               </Button>
             </div>

@@ -77,52 +77,38 @@ export default function Header() {
                 isOpen ? "block" : "hidden"
               } md:block absolute md:relative top-full md:mt-0 md:left-0 mt-10 left-10 right-0`}
             >
-              <div className="flex flex-col md:flex-row text-primary">
+              <div className="flex flex-col md:flex-row text-primary cursor-pointer font-medium">
                 <NavigationMenuItem>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <Link href={"#about"}>About Us</Link>
+                    About Us
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <Link href={"#services"}>Services</Link>
+                    Services
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      <Link href={"#pricing"}>Pricing</Link>
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Pricing
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      <Link href={"#pricing"}>Careers</Link>
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Careers
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      <Link href={"#pricing"}>Contact Us</Link>
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Contact Us
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </div>
             </div>
             <NavigationMenuItem>
-              <Link href="/waitlist">
-                <Button className="transition-colors duration-200 xl:ml-24 md:ml-0 hidden md:flex bg-secondary text-primary">
-                  Get Started
-                </Button>
-              </Link>
+              <Button className="transition-colors duration-200 xl:ml-24 md:ml-0 hidden md:flex bg-secondary text-primary hover:bg-secondary/80">
+                Get Started
+              </Button>
             </NavigationMenuItem>
           </NavigationMenuList>
 
@@ -157,7 +143,7 @@ export default function Header() {
         </NavigationMenu>
       </div>
       {isOpen && (
-        <div className="fixed inset-0 bg-cardCustom z-40 md:hidden">
+        <div className="fixed inset-0 bg-secondary h-96 z-40 md:hidden p-4 rounded-br-3xl rounded-bl-3xl shadow-lg">
           {/* This div creates a full-screen white background when the menu is open on small screens */}
         </div>
       )}
