@@ -93,12 +93,17 @@ const PageFooter = () => {
               </svg>
               <h1 className="font-bold tex-xl mt-3 text-primary">FinEdge</h1>
             </Link>
-            <p className="text-customColor max-w-md mt-2 mb-4">
-              Experience seamless, secure, and smart banking at your fingertips.
+          </div>
+          <div className="mt-6">
+            <h1 className="lg:text-2xl text-xl font-bold text-primary">
+              Join Our Newsletter to get regular updates
+            </h1>
+            <p className="text-customColor max-w-xl mt-2">
+              Subscribe our newsletter to get more free design course and
+              resource
             </p>
           </div>
-          <form onSubmit={(e) => e.preventDefault()}>
-            <label className="block pt-4 pb-2">Stay up to date</label>
+          <form onSubmit={(e) => e.preventDefault()} className="mt-2">
             <div className="max-w-sm flex items-center border rounded-full p-1">
               <input
                 type="email"
